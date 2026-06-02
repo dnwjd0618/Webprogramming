@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25_김우정</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">My Portfolio</div>
+    <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">☰</button>
+    <nav class="nav" id="navMenu">
+      <a href="#home" class="nav-link active" data-page="home">Home</a>
+      <a href="#about" class="nav-link" data-page="about">About</a>
+      <a href="#movies" class="nav-link" data-page="movies">Movies</a>
+      <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="page active-page">
+      <div class="hero">
+        <div class="hero-text">
+          <p class="small-title">Welcome to my website</p>
+          <h1>안녕하세요. 저는 <span>김우정</span>입니다.</h1>
+          <p>이 웹사이트는 HTML, CSS, jQuery를 사용해서 만든 자기소개용 단일 페이지 어플리케이션(SPA)입니다.</p>
+          <button class="main-btn" data-page="about">자기소개 보기</button>
+        </div>
+        <div class="hero-card">
+          <img src="profile.jpg" alt="프로필 이미지">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="page">
+      <div class="section-title"><p>About Me</p><h2>자기소개</h2></div>
+      <div class="about-layout">
+        <div class="profile-box"><img src="profile.jpg" alt="자기소개 이미지"></div>
+        <div class="about-text">
+          <h3>안녕하세요. 저는 컴퓨터 공학과에 재학 중인 학생입니다.</h3>
+          <p>저는 수업을 통해 HTML, CSS, JavaScript를 공부하고 있습니다.</p>
+          <div class="info-grid">
+            <div><strong>Interest</strong><span>Movies & Books</span></div>
+            <div><strong>Skill</strong><span>HTML, CSS, jQuery</span></div>
+            <div><strong>Goal</strong><span>Learning New Things</span></div>
+            <div><strong>Style</strong><span>Simple & Clean</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="movies" class="page">
+      <div class="section-title"><p>Movies</p><h2>재밌게 본 영화</h2></div>
+      <div class="project-grid">
+        <article class="project-card">
+          <img src="aftersun.jpg" alt="Aftersun 포스터">
+          <h3>Aftersun</h3>
+          <div class="tags"><span>Drama</span><span>Road Movie</span></div>
+        </article>
+        <article class="project-card">
+          <img src="robot-dreams.jpg" alt="Robot Dreams 포스터">
+          <h3>로봇 드림</h3>
+          <div class="tags"><span>Animation</span><span>Comedy</span></div>
+        </article>
+        <article class="project-card">
+          <img src="dune.jpg" alt="Dune 포스터">
+          <h3>Dune</h3>
+          <div class="tags"><span>Sci-Fi</span><span>Adventure</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="page">
+      <div class="section-title"><p>Contact</p><h2>연락처</h2></div>
+      <div class="contact-box">
+        <p>아래 정보를 통해 연락할 수 있습니다.</p>
+        <div class="contact-list">
+          <div><strong>Email</strong><span>dnwjd0618@kangwon.ac.kr</span></div>
+          <div><strong>GitHub</strong><span>https://github.com/dnwjd0618</span></div>
+          <div><strong>Location</strong><span>Chuncheon, Korea</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" id="bottomNav">
+    <a href="#home" class="bottom-nav-link active" data-page="home">Home</a>
+    <a href="#about" class="bottom-nav-link" data-page="about">About</a>
+    <a href="#movies" class="bottom-nav-link" data-page="movies">Movies</a>
+    <a href="#contact" class="bottom-nav-link" data-page="contact">Contact</a>
+  </nav>
+
+  <footer><p>© 2026 My Portfolio. All rights reserved.</p></footer>
+
+  <script src="jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
